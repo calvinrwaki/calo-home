@@ -1,0 +1,819 @@
+/*font family*/
+  @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@700&display=swap');
+
+
+
+@keyframes slideinLeft{
+  from{
+      transform: translateX(-400px);
+  }
+  to{
+      transform: translateX(0);
+  }
+}
+.slideinLeft{
+  animation: slideinLeft 1s ease-in;
+
+}
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+:root{
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+    /*gradient*/
+    --sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+/*GLOBAL CLASSES*/
+a{
+  text-decoration: none;  
+  color: #3f4954;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family:poppins;
+    font-size: 2.5rem;
+}
+h3{
+    font-family: Poppins;
+    font-size: 1.3rem;
+}
+
+button {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: poppins;
+    cursor: pointer;
+}
+/*------------------*/
+
+
+/*for navbar*/
+.nav{
+    background: white;
+    padding:0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    font-family: poppins;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: Gloock;
+    font-size: 1.6rem;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: #104f55;
+}
+.nav .nav-items .nav-link:hover a{
+    color: #ffffff;
+}
+
+/*-------for navbar------*/
+
+/*---------------MAIN CONTENT------------*/
+/*--------SITE TITLE------*/
+main .site-title{
+    background: url('../assets/wavy.jpeg');
+    background-position:center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .site-title .site-background{
+    padding-top: 11rem;
+    text-align: center;
+    color: var(--sky);
+    padding-left: 5rem;
+   
+}
+main .site-title h1,h3{
+    margin: .3rem;
+}
+main .site-title .btn{
+    margin: 1.8rem;
+    background-color: var(--midnight);
+    cursor: pointer;
+    color: white;
+}
+main .site-title .btn:hover{
+transform: scale(1.3);
+transition: .4s;
+}
+.picture-1 img{
+    height: 450px;
+    margin-left: 10rem;
+}
+.picture img{
+    padding-top: 55px;
+    height: 380px;
+  } 
+/*--------SITE TITLE------*/
+
+/*-----next setion---*/
+
+.container{
+    width: 100%;
+    height: 80vh;
+    background: var(--midnight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .textgwa{
+    padding: 5rem;
+}
+  .gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5;
+  }
+  .img-box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background:url(/assets/florian-wehde-OJScR4tDRyc-unsplash.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  .img-box:nth-child(2){
+    background: url(/assets/chris-lee-70l1tDAI6rM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img-box:nth-child(3){
+    background: url(/assets/kees-streefkerk-Adl90-aXYwA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .img-box:nth-child(4){
+    background: url(/assets/nicolas-falgetelli-g7edHd5qLvc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+.img-box h3{
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    -webkit-transition: bottom 0.5s, opacity 0.5s;;
+    transition:  bottom 0.5s, opacity 0.5s;
+}
+.img-box h2{
+    color: white;
+    font-weight: 700;
+    font-family: poppins;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    -webkit-transition: bottom 0.5s, opacity 0.5s;;
+    transition:  bottom 0.5s, opacity 0.5s;
+}
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+
+}
+.img-box:hover h2{
+    opacity: 1;
+    bottom: 25px;
+
+}
+
+.textgwa h1{
+    font-family: poppins;
+    color:white;
+    
+}
+.textgwa h3{
+    font-family: poppins;
+    color: white;
+    
+}
+
+
+
+.textgwa .look{
+    margin-top: 2rem;
+    background-color: goldenrod;
+    transition: .4s;
+}
+.textgwa .look:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.container-2{
+    width: 100%;
+    height: 80vh;
+    background: rgb(218,165,32);
+    background: radial-gradient(circle, rgba(218,165,32,1) 0%, rgba(16,79,85,1) 100%);    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-----------------------------------------------------------------------*/
+:root {
+  --clr-primary-400: 263 55% 52%;
+  --clr-secondary-400: 217 19% 35%;
+  --clr-secondary-500: 219 29% 14%;
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral-200: 210 46% 95%;
+  --clr-neutral-300: 0 0% 81%;
+
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  --fw-400: 500;
+  --fw-700: 600;
+
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  font-family: Poppins;
+  font-weight: var(--fw-400);
+
+  background-color: hsl(var(--clr-neutral-200));
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-700);
+}
+
+/* utilities */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.bg-primary-400 {
+  background: hsl(var(--clr-primary-400));
+}
+.bg-secondary-400 {
+  background: hsl(var(--clr-secondary-400));
+}
+.bg-secondary-500 {
+  background: hsl(var(--clr-secondary-500));
+}
+
+.bg-neutral-100 {
+  background: hsl(var(--clr-neutral-100));
+}
+
+.text-neutral-100 {
+  color: hsl(var(--clr-neutral-100));
+}
+.text-secondary-400 {
+  color: hsl(var(--clr-secondary-400));
+}
+.border-primary-400 {
+  border: 2px solid #a775f1;
+}
+
+/* components */
+.testimonial-grid {
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+.testimonial {
+  font-size: var(--fs-400);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+.testimonial.quote {
+  background-image: url(/assets/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+.testimonial img {
+  width: 1.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.testimonial .name {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  line-height: 1;
+}
+
+.testimonial .position {
+  font-size: var(--fs-300);
+  opacity: 0.5;
+}
+
+.testimonial > p:first-of-type {
+  font-size: var(--fs-500);
+  line-height: 1.2;
+}
+
+.testimonial > p:last-of-type {
+  opacity: 0.7;
+}
+
+:root {
+  --clr-primary-400: 263 55% 52%;
+  --clr-secondary-400: 217 19% 35%;
+  --clr-secondary-500: 219 29% 14%;
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral-200: 210 46% 95%;
+  --clr-neutral-300: 0 0% 81%;
+
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  --fw-400: 500;
+  --fw-700: 600;
+
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  font-family: poppins;
+  font-weight: var(--fw-400);
+
+  background-color: hsl(var(--clr-neutral-200));
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-700);
+}
+
+/* utilities */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.bg-primary-400 {
+  background: hsl(var(--clr-primary-400));
+}
+.bg-secondary-400 {
+  background: hsl(var(--clr-secondary-400));
+}
+.bg-secondary-500 {
+  background: hsl(var(--clr-secondary-500));
+}
+
+.bg-neutral-100 {
+  background: hsl(var(--clr-neutral-100));
+}
+
+.text-neutral-100 {
+  color: hsl(var(--clr-neutral-100));
+}
+.text-secondary-400 {
+  color: hsl(var(--clr-secondary-400));
+}
+.border-primary-400 {
+  border: 2px solid #a775f1;
+}
+
+/* components */
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+   'one'
+   'two'
+   'three'
+   'four'
+   'five';
+
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+.testimonial {
+  font-size: var(--fs-400);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+}
+
+.testimonial:nth-child(1) {
+  grid-area: one;
+}
+.testimonial:nth-child(2) {
+  grid-area: two;
+}
+.testimonial:nth-child(3) {
+  grid-area: three;
+}
+.testimonial:nth-child(4) {
+  grid-area: four;
+}
+.testimonial:nth-child(5) {
+  grid-area: five;
+}
+
+@media (min-width: 30em) {
+  .testimonial-grid {
+    grid-template-areas:
+     'one one'
+     'two five'
+     'three five'
+     'four four'
+  }
+}
+
+@media (min-width: 50em) {
+  .testimonial-grid {
+    grid-template-areas:
+     'one one two five'
+     'three four four five'
+  }
+}
+
+
+
+.testimonial.quote {
+  background-image: url("./assets/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+.testimonial img {
+  width: 1.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.testimonial .name {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-400);
+  line-height: 1;
+}
+
+.testimonial .position {
+  font-size: var(--fs-300);
+  opacity: 0.5;
+}
+
+.testimonial > p:first-of-type {
+  font-size: var(--fs-500);
+  line-height: 1.2;
+}
+
+.testimonial > p:last-of-type {
+  opacity: 0.7;
+}
+.page3{
+    margin-left: 36%;
+    padding: 2rem;
+    color:black;
+}
+
+.lesgo{
+    background-color: #ffffff;
+    padding-bottom:5rem;
+    padding-top: 5rem;
+}
+
+
+/*----------------footer------------------*/
+
+.container-3{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: var(--midnight);
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color:goldenrod;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+/*---------------MAIN CONTENT------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* viewport less than or equal to 750px*/
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav .nav-items{
+      flex-direction: column;
+    }
+}
+/* viewport less than or equal to 750px*/
